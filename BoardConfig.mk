@@ -30,6 +30,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_hydrogen_defconfig
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive androidboot.verifiedbootstate=green
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
