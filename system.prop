@@ -6,7 +6,7 @@ persist.audio.fluence.voicerec=false
 voice.voip.conc.disabled=false
 
 # Camera
-media.camera.ts.monotonic=0
+media.camera.ts.monotonic=1
 persist.camera.HAL3.enabled=1
 
 # Display
