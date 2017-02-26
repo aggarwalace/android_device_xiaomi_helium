@@ -34,6 +34,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=Xiaomi/hydrogen/hydrogen:7.0/NRD90M/6.12.30:user/release-keys \
-    PRIVATE_BUILD_DESC="hydrogen-user 7.0 NRD90M 6.12.30 release-keys"
+    BUILD_FINGERPRINT=Xiaomi/hydrogen/hydrogen:7.0/NRD90M/7.2.16:user/release-keys \
+    PRIVATE_BUILD_DESC="hydrogen-user 7.0 NRD90M 7.2.16 release-keys"
 endif
