@@ -24,9 +24,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from device
 $(call inherit-product, device/xiaomi/hydrogen/device.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := hydrogen
-PRODUCT_NAME := full_hydrogen
+# Set those variables here to overwrite the inherited values.
+BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := hydrogen
+PRODUCT_DEVICE := hydrogen
+PRODUCT_NAME := hydrogen
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := Mi Max
+TARGET_VENDOR := Xiaomi
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Use the latest approved GMS identifiers unless running a signed build
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=Xiaomi/hydrogen/hydrogen:7.0/NRD90M/7.2.16:user/release-keys \
+    PRIVATE_BUILD_DESC="hydrogen-user 7.0 NRD90M 7.2.16 release-keys"
