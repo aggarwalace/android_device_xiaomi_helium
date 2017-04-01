@@ -44,7 +44,16 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.target.rc
+    fstab.qcom \
+    init.qcom.sh \
+    init.qcom.bt.sh
+
+PRODUCT_PACKAGES += \
+    init.target.rc \
+    init.qcom.rc \
+    init.qcom.power.rc \
+    init.qcom.usb.rc \
+    ueventd.qcom.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
