@@ -16,10 +16,10 @@
 # inherit from common msm8956-common
 -include device/xiaomi/msm8956-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/hydrogen
+DEVICE_PATH := device/xiaomi/helium
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hydrogen
+TARGET_OTA_ASSERT_DEVICE := helium
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -29,7 +29,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 26705099776 # 26705116160 - 16384
 
 # Kernel
-TARGET_KERNEL_CONFIG := harfix4_defconfig
+TARGET_KERNEL_CONFIG := accent_hydrogen_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -41,4 +41,4 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # inherit from the proprietary version
--include vendor/xiaomi/hydrogen/BoardConfigVendor.mk
+-include vendor/xiaomi/helium/BoardConfigVendor.mk
